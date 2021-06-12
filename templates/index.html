@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="static/css/style.css">
   <style type="text/css">
 
+
 body {
   
   background: rgb(34,193,195);
@@ -92,13 +93,22 @@ ul li {
 ul li > * {
     width: 100%;
 }
+.right { 
+    float: left; 
+    width: 300px; 
+    border: 3px solid #73AD21; 
+    padding: 10px; 
+} 
 </style>
-
 
 
 </head>
 
 <body>
+	<div class="right"> 
+		<img src="ukm-logo.png" alt="" width="200" height="300">
+ 		<img src="mlv.png" alt="" width="200" height="300">
+</div> 
  <div class="login">
   <h1>RENSTIMATE</h1>
      <h3> Enter the following values to predict the property renting price</h3>
@@ -124,7 +134,7 @@ ul li > * {
     
     </li>
      <li>
-    <input type="number" name="psf" placeholder="Psf (0.2-10)" step=".01" required="required" />
+    <input type="number" name="psf" placeholder="Price per square feet" step=".01" required="required" />
     </li>
      <li>
     <input type="number" name="bath" placeholder="Number of bathroom" required="required" />
